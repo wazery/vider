@@ -1,0 +1,14 @@
+language ruby
+cache: bundler
+
+rvm:
+  - 2.1.0
+
+script: 'bundle exec rake'
+
+notifications:
+  email:
+    recipients:
+      - wazery@ubuntu.com
+    on_failure: change
+    on_success: never
