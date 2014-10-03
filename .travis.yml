@@ -1,10 +1,10 @@
-language ruby
+language: ruby
 cache: bundler
 
 rvm:
   - 2.1.0
 
-script: 'bundle exec rake'
+# script: 'bundle exec rake'
 
 notifications:
   email:
