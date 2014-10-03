@@ -2,8 +2,8 @@
 
 A Ruby gem to wrap the functionalities of the Vide jQuery plugin.
 
-[![Coverage Status](https://coveralls.io/repos/wazery/Vider/badge.png)](https://coveralls.io/r/wazery/Vider)
-[![Build Status](https://travis-ci.org/wazery/Vider.svg)](https://travis-ci.org/wazery/Vider)
+[![Coverage Status](https://coveralls.io/repos/wazery/vider/badge.png)](https://coveralls.io/r/wazery/vider)
+[![Build Status](https://travis-ci.org/wazery/vider.svg)](https://travis-ci.org/wazery/vider)
 
 TODO: Write a RSpec tests for this gem
 
