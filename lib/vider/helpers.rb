@@ -5,7 +5,7 @@ module ViderVideoTag
 
     volume        = options[:volume] || 1
     playback_rate = options[:playback_rate] || 1
-    muted         = options[:muted] || true
+    mute          = options[:muted] || true
     looping       = options[:loop] || true
     autoplay      = options[:autoplay] || true
     position      = options[:position] || "50% 50%"
