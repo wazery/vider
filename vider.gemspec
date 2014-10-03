@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Vider::VERSION
   spec.authors       = ["Islam Wazery"]
   spec.email         = ["wazery@ubuntu.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{A Ruby gem to wrap the functionalities of the Vide jQuery plugin.}
+  spec.description   = %q{A Ruby gem to wrap the functionalities of the Vide jQuery plugin.}
+  spec.homepage      = "https://github.com/wazery/Vider"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
