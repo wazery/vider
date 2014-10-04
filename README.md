@@ -9,7 +9,9 @@ A Ruby gem to wrap the functionalities of the Vide jQuery plugin.
 [![Support Vider Gem](http://img.shields.io/gittip/wbotelhos.svg)](https://www.gittip.com/wazery "Git Tip")
 
 
-TODO: Write a RSpec tests for this gem
+## TODO
+
+1. Write a RSpec tests for this gem
 
 ## Installation
 
@@ -27,9 +29,48 @@ Or install it yourself as:
 
     $ gem install vider
 
+Add the required JS file to your `app/assets/javascripts/application.js`
+    //= require jquery.vide
+    
+## Notes
+
+* All modern desktop browsers are supported.
+* IE9+
+* iOS plays video from a browser only in the native player. So video for iOS is disabled, only fullscreen poster will be used.
+* Some android devices play video, some not — go figure. So video for android is disabled, only fullscreen poster will be used.
+
 ## Usage
 
-TODO: Write usage instructions here
+Prepare your video in several formats like '.webm', '.mp4' for cross browser compatability, also add a poster with `.jpg`, `.png` or `.gif` extension:
+
+```
+path/
+├── to/
+│   ├── video.mp4
+│   ├── video.ogv
+│   ├── video.webm
+│   └── video.jpg
+```
+
+### Vide Tag
+
+You can use the Vide view helper to add video elements to your Rails views
+
+```erb
+<%= vide_tag 'path/to/video', position: '100% 100%' %>
+```
+
+## Options
+
+Below is a complete list of options, and matching default values:
+
+1. **volume** default is 1,
+2. **playbackRate** default is 1
+3. **muted** default is true
+4. **loop** default is true
+5. **autoplay** default is  true
+6. **position** default is "50% 50%"
+7. **posterType** default is "detect"
 
 ## Contributing
 
