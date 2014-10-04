@@ -79,8 +79,8 @@ Below is a complete list of options, and matching default values:
 
 If you like this project you may support me by donating something on Gittip, starring this repository or reporting bugs and ideas in the issue section.
 
-[![gittip](screenshots/gittip-button.jpg)](https://www.gratipay.com/wazery/)
-[![issues](screenshots/issues-button.jpg)](https://github.com/wazery/vider/issues)
+[![gittip](https://github.com/FezVrasta/bootstrap-material-design/raw/master/screenshots/gittip-button.jpg)](https://www.gratipay.com/wazery/)
+[![issues](https://github.com/FezVrasta/bootstrap-material-design/raw/master/screenshots/issues-button.jpg)](https://github.com/wazery/vider/issues)
 
 ## Contributing
 
