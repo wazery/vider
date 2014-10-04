@@ -1,8 +1,7 @@
-# Vider
+# Vider [![endorse](http://api.coderwall.com/wazery/endorsecount.png)](http://coderwall.com/wazery)
 
 A Ruby gem to wrap the functionalities of the Vide jQuery plugin.
 
-[![Coverage Status](https://coveralls.io/repos/wazery/vider/badge.png)](https://coveralls.io/r/wazery/vider)
 [![Build Status](https://travis-ci.org/wazery/vider.svg)](https://travis-ci.org/wazery/vider)
 [![Code Climate](https://codeclimate.com/github/wazery/vider/badges/gpa.svg)](https://codeclimate.com/github/wazery/vider)
 [![License](http://img.shields.io/license/MIT.png?color=green)](http://opensource.org/licenses/MIT)
@@ -12,6 +11,7 @@ A Ruby gem to wrap the functionalities of the Vide jQuery plugin.
 ## TODO
 
 1. Write a RSpec tests for this gem
+2. :wq
 
 ## Installation
 
@@ -30,6 +30,7 @@ Or install it yourself as:
     $ gem install vider
 
 Add the required JS file to your `app/assets/javascripts/application.js`
+
     //= require jquery.vide
     
 ## Notes
@@ -37,7 +38,7 @@ Add the required JS file to your `app/assets/javascripts/application.js`
 * All modern desktop browsers are supported.
 * IE9+
 * iOS plays video from a browser only in the native player. So video for iOS is disabled, only fullscreen poster will be used.
-* Some android devices play video, some not — go figure. So video for android is disabled, only fullscreen poster will be used.
+* Some Android devices play video, some not — go figure. So video for Android is disabled, only fullscreen poster will be used.
 
 ## Usage
 
@@ -52,25 +53,27 @@ path/
 │   └── video.jpg
 ```
 
-### Vide Tag
+### Vider Tag
 
-You can use the Vide view helper to add video elements to your Rails views
+You can use the Vider view helpers to add video elements to your Rails views.
 
 ```erb
-<%= vide_tag 'path/to/video', position: '100% 100%' %>
+<%= vider_tag 'path/to/video', position: '100% 100%' %>
 ```
+
+I recommend the video to be in the assets directory like so for example: `'assets/video.mp4'` Note that video.mp4 will be under `videos` directory
 
 ## Options
 
 Below is a complete list of options, and matching default values:
 
-1. **volume** default is 1,
-2. **playbackRate** default is 1
-3. **muted** default is true
-4. **loop** default is true
-5. **autoplay** default is  true
-6. **position** default is "50% 50%"
-7. **posterType** default is "detect"
+1. **volume** default is *1*,
+2. **playbackRate** default is *1*
+3. **muted** default is *true*
+4. **loop** default is *true*
+5. **autoplay** default is  *true*
+6. **position** default is *"50% 50%"*
+7. **posterType** default is *"detect"*
 
 ## Contributing
 
