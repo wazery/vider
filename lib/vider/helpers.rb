@@ -16,7 +16,7 @@ module ViderVideoTag
     content_tag :div, '', id: 'vider-element', style: "width: #{width}; height: #{height};", data: { vide_bg: bg, vide_options: video_options }
   end
 
-  # A view helper for creating adding a video background to an existing element
+  # A view helper for adding a video background to an existing element
   # TODO: Implement this helper
   def vider_for_element_tag bg, options={}
   end
