@@ -1,4 +1,8 @@
+#!/user/bin/env rake
 require "bundler/gem_tasks"
+
+# A rake task to create a dummy Rails app for testing
+require "rails/dummy/tasks"
 # require "rspec/core/rake_task"
 
 desc "Bundle the gem"
@@ -9,8 +13,20 @@ task :bundle do
   sh 'rm *.gem'
 end
 
-task(:default).clear
-task :default => :bundle
+# task(:default).clear
+Bundler::GemHelper.install_tasks
+
+require 'rake/testtask'
+
+desc "Load the tests"
+Rake::TestTask.new(:test) do |t|
+  t.libs << 'lib'
+  t.libs << 'test'
+  t.pattern = 'test/**/*_test.rb'
+  t.verbose = false
+end
+
+task default: :test
 
 # Default directory to look in is '/spec'
 # Run with 'rake spec'
@@ -19,4 +35,3 @@ task :default => :bundle
 # end
 
 # task default: :spec
-
