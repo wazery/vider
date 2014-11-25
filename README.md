@@ -75,6 +75,13 @@ Below is a complete list of options, and matching default values:
 6. **position** default is *"50% 50%"*
 7. **posterType** default is *"detect"*
 
+## Support me
+
+If you like this project you may support me by donating something on Gittip, starring this repository or reporting bugs and ideas in the issue section.
+
+[![gittip](https://github.com/FezVrasta/bootstrap-material-design/raw/master/screenshots/gittip-button.jpg)](https://www.gratipay.com/wazery/)
+[![issues](https://github.com/FezVrasta/bootstrap-material-design/raw/master/screenshots/issues-button.jpg)](https://github.com/wazery/vider/issues)
+
 ## Contributing
 
 1. Fork it ( https://github.com/wazery/vider/fork )
